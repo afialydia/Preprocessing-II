@@ -1,1 +1,58 @@
 // Navigation Styles here
+
+.navigation {
+    display: flex;
+    width: 100%;
+    border-bottom: 2px dashed @navigation-border;
+    justify-content: space-evenly;
+    padding: 2%;
+
+    nav {
+        display: flex;
+        font-size: 1.5rem;
+        width: 800px;
+        padding-right: 20%;
+
+        a {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            padding: 1%;
+            text-decoration: none;
+            align-items: center;
+            color: black;
+        }
+    }
+
+    h1 {
+        display: flex;
+        width: 100%;
+        padding-left: 20%;
+    }
+
+
+}
+
+@media @mobile {
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 3%;
+        ;
+        justify-content: center;
+
+
+        nav,
+        h1 {
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            border: 1px solid;
+            align-self: center;
+ 
+
+        }
+
+    }
+}
